@@ -23,6 +23,10 @@ skills/
 # broad skills/ rule above ignores install-target skill dirs elsewhere.
 !graphify/skills/
 !graphify/skills/**
+# Project-scoped Codex skill (graphify install --project --platform codex),
+# committed so Codex users of this repo get $graphify without a local install.
+!.codex/skills/
+!.codex/skills/**
 # The skillgen core fragments are the human-edited source of the lean SKILL.md.
 # A global "core" ignore (for core dumps) would otherwise drop them.
 !tools/skillgen/fragments/core/
